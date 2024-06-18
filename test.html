@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omkar Industries</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Custom CSS for additional styling -->
+    <style>
+     /* Product image hover effect */
+        .product-card {
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .product-card img {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1) rotateY(10deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-gray-800"
+          ><i class="fa-solid fa-om"></i> Omkar Industries</a
+        >
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="text-gray-800 hover:text-indigo-600">Home</a>
+          <a href="#about" class="text-gray-800 hover:text-indigo-600">About</a>
+          <a href="#products" class="text-gray-800 hover:text-indigo-600"
+            >Products</a
+          >
+          <a href="#gallery" class="text-gray-800 hover:text-indigo-600"
+            >North INd</a
+          >
+          <a href="#team" class="text-gray-800 hover:text-indigo-600">Team</a>
+          <a href="#contact" class="text-gray-800 hover:text-indigo-600"
+            >Contact</a
+          >
+        </div>
+        <button class="md:hidden text-gray-800" id="menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      class="md:hidden bg-white shadow-lg"
+      id="mobile-menu"
+      style="display: none"
+    >
+      <a
+        href="#home"
+        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
+        >Home</a
+      >
+      <a
+        href="#about"
+        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
+        >About</a
+      >
+      <a
+        href="#products"
+        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
+        >Products</a
+      >
+      <a
+        href="#gallery"
+        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
+        >North IND</a
+      >
+      <a
+        href="#team"
+        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
+        >Team</a
+      >
+      <a
+        href="#contact"
+        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
+        >Contact</a
+      >
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('img/bgcover4.webp')"
+    >
+      <div class="container mx-auto h-full flex justify-center items-center">
+        <div class="text-center text-white">
+          <h1 class="text-5xl font-bold mb-4">Welcome to Omkar Industries</h1>
+          <p class="text-xl mb-8">
+            Leading the industry with quality and innovation
+          </p>
+          <a
+            href="#about"
+            class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">About Us</h2>
+        <p class="text-lg mb-4">
+          Omkar Industries, a leader in the manufacturing sector, is dedicated
+          to producing high-quality products that meet the highest industry
+          standards. Our commitment to innovation and excellence drives us to
+          continuously improve our processes and deliver exceptional value to
+          our clients. With a team of skilled professionals and state-of-the-art
+          facilities, we ensure that every product we create exceeds
+          expectations. Join us in our journey to redefine quality and
+          innovation in the manufacturing industry.
+        </p>
+        <a
+          href="#products"
+          class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold"
+          >Our Products</a
+        >
+      </div>
+    </section>
+
+    <!-- South Section -->
+    <section id="products" class="py-20 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">South Indian Sarees</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Product Card -->
+          <div class="product-card p-6 rounded-lg shadow-lg">
+            <img
+              src="img/uppada.webp"
+              alt="Product 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Uppada Saree</h3>
+            <p class="text-lg">
+              Silk/cotton, light feel, intricate designs, from Andhra Pradesh.
+            </p>
+          </div>
+          <div class="product-card p-6 rounded-lg shadow-lg">
+            <img
+              src="img/pochampali.webp"
+              alt="Product 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Pochampali Saree</h3>
+            <p class="text-lg">
+              Ikat patterns in silk/cotton, vibrant colors, and geometric
+              designs.
+            </p>
+          </div>
+          <div class="product-card p-6 rounded-lg shadow-lg">
+            <img
+              src="img/kasuti.webp"
+              alt="Product 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Kasuti Saree</h3>
+            <p class="text-lg">
+              Traditional embroidery, vibrant patterns, from Karnataka
+            </p>
+          </div>
+          <div class="product-card p-6 rounded-lg shadow-lg">
+            <img
+              src="img/kanchipuram.jpg"
+              alt="Product 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Kanchipuram Silk Saree</h3>
+            <p class="text-lg">
+              Rich silk, wide borders, traditional motifs, from Tamil Nadu.
+            </p>
+          </div>
+          <div class="product-card p-6 rounded-lg shadow-lg">
+            <img
+              src="img/kanjiwaram.jpg"
+              alt="Product 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Kanjeevaram Saree</h3>
+            <p class="text-lg">
+              Pure silk with gold zari, vibrant colors, and intricate motifs.
+            </p>
+          </div>
+          <div class="product-card p-6 rounded-lg shadow-lg">
+            <img
+              src="img/mysore.webp"
+              alt="Product 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Mysore Silk Saree</h3>
+            <p class="text-lg">
+              Soft silk, minimalistic designs, and vibrant colors.
+            </p>
+          </div>
+          <!-- Repeat for other products -->
+        </div>
+      </div>
+    </section>
+
+    <!-- North Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">North INdian Sarees</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Gallery Image -->
+          <div class="relative">
+            <img
+              src="img/tm-img-07-tn.jpg"
+              alt="Gallery Image 1"
+              class="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity"
+            >
+              <a href="img/tm-img-07.jpg" class="text-white text-lg">View</a>
+            </div>
+          </div>
+          <!-- Repeat for other gallery images -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Team Member -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <img
+              src="path/to/team1.jpg"
+              alt="Team Member 1"
+              class="w-full h-64 object-cover mb-4 rounded-lg"
+            />
+            <h3 class="text-2xl font-bold mb-2">Team Member 1</h3>
+            <p class="text-lg">About team member 1...</p>
+          </div>
+          <!-- Repeat for other team members -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+        <form class="max-w-lg mx-auto">
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="w-full p-3 border border-gray-300 rounded-lg"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-3 border border-gray-300 rounded-lg"
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              placeholder="Message"
+              class="w-full p-3 border border-gray-300 rounded-lg"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4">
+      <div class="container mx-auto text-center">
+        <p class="text-gray-800">
+          &copy; 2024 Omkar Industries. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for interactive elements -->
+    <script>
+      document
+        .getElementById("menu-button")
+        .addEventListener("click", function () {
+          var mobileMenu = document.getElementById("mobile-menu");
+          if (
+            mobileMenu.style.display === "none" ||
+            mobileMenu.style.display === ""
+          ) {
+            mobileMenu.style.display = "block";
+          } else {
+            mobileMenu.style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
