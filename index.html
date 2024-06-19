@@ -1,1217 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Omkar IND</title>
-
-    <!-- load stylesheets -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
-    />
-    <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omkar Industries</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Bootstrap style -->
-    <link rel="stylesheet" href="css/hero-slider-style.css" />
-    <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
-    <link rel="stylesheet" href="css/tooplate-style.css" />
-    <!-- favicon  -->
-    <!-- <link rel="shortcut icon" href="img/favicon.png" /> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body>
-    <!-- Content -->
-    <div class="cd-hero">
-      <!-- Navigation -->
-      <div class="cd-slider-nav">
-        <nav class="navbar">
-          <div class="tm-navbar-bg">
-            <a class="navbar-brand text-uppercase" href="#"
-              ><i class="fa-solid fa-om tm-brand-icon"></i>Omkar Industries</a
-            >
-
-            <button
-              class="navbar-toggler hidden-lg-up"
-              type="button"
-              data-toggle="collapse"
-              data-target="#tmNavbar"
-            >
-              &#9776;
-            </button>
-            <div
-              class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar"
-              id="tmNavbar"
-            >
-              <ul class="nav navbar-nav">
-                <li class="nav-item active selected">
-                  <a class="nav-link" href="#0" data-no="1"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="2">North Taste</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="3">South Taste</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="4">Our Team</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#0" data-no="5">Get in touch</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <ul class="cd-hero-slider">
-        <!-- Page 1 Gallery One -->
-        <li class="selected">
-          <div class="cd-full-width">
-            <div
-              class="container-fluid js-tm-page-content"
-              data-page-no="1"
-              data-page-type="gallery"
-            >
-              <div class="tm-img-gallery-container">
-                <div class="tm-img-gallery gallery-one">
-                  <!-- Gallery One pop up connected with JS code below -->
-                  <div class="tm-img-gallery-info-container">
-                    <h2 class="tm-text-title tm-gallery-title tm-white">
-                      <span class="tm-white">Image Gallery</span>
-                    </h2>
-                    <p class="tm-text">
-                     
-                    </p>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-01-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>One</span></h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-01.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-02-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>Two</span></h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-02.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-03-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Three</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-03.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-04-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>Four</span></h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-04.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-05-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>Five</span></h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-05.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-06-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>Six</span></h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-06.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-07-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Seven</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-07.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-08-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Eight</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-08.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-09-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>Nine</span></h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-09.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-10-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">Image <span>Ten</span></h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-10.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-11-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Eleven</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-11.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-12-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Twelve</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-12.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-13-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Thirteen</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-13.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-14-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Fourteen</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-14.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-15-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Fifteen</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                        <a href="img/tm-img-15.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-16-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Image <span>Sixteen</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Maecenas purus sem, lobortis id odio in sapien.
-                        </p>
-                        <a href="img/tm-img-16.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- Page 2 Gallery Two -->
-        <li>
-          <div class="cd-full-width">
-            <div
-              class="container-fluid js-tm-page-content"
-              data-page-no="2"
-              data-page-type="gallery"
-            >
-              <div class="tm-img-gallery-container">
-                <div class="tm-img-gallery gallery-two">
-                  <!-- Gallery Two pop up connected with JS code below -->
-
-                  <div class="tm-img-gallery-info-container">
-                    <h2 class="tm-text-title tm-gallery-title">
-                      <span class="tm-white"><b>North Indian Sarees</b></span>
-                    </h2>
-                    <p class="tm-text">
-                      <span class="tm-white"
-                        >North Indian sarees are celebrated for their opulent
-                        fabrics, intricate weaves, vibrant colors, and exquisite
-                        embroidery, embodying cultural richness and timeless
-                        elegance.</span
-                      >
-                    </p>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-12-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Banarasi <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Known for intricate brocade work and gold/silver zari.
-                        </p>
-                        <a href="img/tm-img-12.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-11-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Kanjeevaram <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Heavy silk with rich gold borders and motifs.
-                        </p>
-                        <a href="img/tm-img-11.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-10-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Chanderi <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Lightweight fabric with traditional motifs and sheer
-                          texture.
-                        </p>
-                        <a href="img/tm-img-10.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-09-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Paithani <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Intricate peacock motifs and rich silk from
-                          Maharashtra.
-                        </p>
-                        <a href="img/tm-img-09.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-08-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Bandhani <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Tie-dye technique creating colorful patterns (Bandhej)
-                        </p>
-                        <a href="img/tm-img-08.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-07-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Kota Doria <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Light cotton or silk-cotton blend with square-like
-                          patterns.
-                        </p>
-                        <a href="img/tm-img-07.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-06-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Tussar silk <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Raw silk with a natural golden sheen from Bhagalpur.
-                        </p>
-                        <a href="img/tm-img-06.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-05-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Jamdani <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Fine muslin with intricate floral motifs woven by hand
-                        </p>
-                        <a href="img/tm-img-05.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-04-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Patola <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Double ikat weave with geometric designs from Gujarat.
-                        </p>
-                        <a href="img/tm-img-04.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-03-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Phulkari <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Colorful embroidery originating from Punjab, often on
-                          cotton or silk.
-                        </p>
-                        <a href="img/tm-img-03.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-02-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Chikankari <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Delicate white-on-white embroidery on lightweight
-                          fabric, originating from Lucknow, known for its
-                          elegance and craftsmanship.
-                        </p>
-                        <a href="img/tm-img-02.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-01-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Muga silk <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Golden silk sarees from Assam, renowned for their
-                          natural sheen, durability, and traditional motifs,
-                          representing Assamese cultural heritage.
-                        </p>
-                        <a href="img/tm-img-01.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- Page 3 Gallery Three -->
-        <li>
-          <div class="cd-full-width">
-            <div
-              class="container-fluid js-tm-page-content"
-              data-page-no="3"
-              data-page-type="gallery"
-            >
-              <div class="tm-img-gallery-container">
-                <div class="tm-img-gallery gallery-three">
-                  <!-- Gallery Two pop up connected with JS code below -->
-
-                  <div class="tm-img-gallery-info-container">
-                    <h2 class="tm-text-title tm-gallery-title">
-                      <span class="tm-white"><b>South Indian Sarees</b></span>
-                    </h2>
-                    <p class="tm-text">
-                      <span class="tm-white"
-                        >The beauty of South Indian sarees lies in their
-                        timeless elegance, intricate craftsmanship, vibrant
-                        colors, and the cultural stories they weave through
-                        their motifs and designs. They are not just garments but
-                        embodiments of tradition, heritage, and artistic
-                        expression.</span
-                      >
-                    </p>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-01-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Kanjeevaram <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Pure silk with gold zari, vibrant colors, and
-                          intricate motifs.
-                        </p>
-                        <a href="img/tm-img-01.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-06-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Pochampally <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Ikat patterns in silk/cotton, vibrant colors, and
-                          geometric designs.
-                        </p>
-                        <a href="img/tm-img-06.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-13-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Kerala Kasavu <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Off-white cotton with gold border, worn on festivals.
-                        </p>
-                        <a href="img/tm-img-13.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-12-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Mysore silk <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Soft silk, minimalistic designs, and vibrant colors.
-                        </p>
-                        <a href="img/tm-img-12.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-05-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Gadwal <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Cotton-silk blend, contrasting borders, and
-                          lightweight..
-                        </p>
-                        <a href="img/tm-img-05.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-09-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Uppada <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Silk/cotton, light feel, intricate designs, from
-                          Andhra Pradesh.
-                        </p>
-                        <a href="img/tm-img-09.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-11-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Kanchipuram silk <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Rich silk, wide borders, traditional motifs, from
-                          Tamil Nadu.
-                        </p>
-                        <a href="img/tm-img-11.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="grid-item">
-                    <figure class="effect-bubba">
-                      <img
-                        src="img/tm-img-14-tn.jpg"
-                        alt="Image"
-                        class="img-fluid tm-img"
-                      />
-                      <figcaption>
-                        <h2 class="tm-figure-title">
-                          Kasuti <span>Saree</span>
-                        </h2>
-                        <p class="tm-figure-description">
-                          Traditional embroidery, vibrant patterns, from
-                          Karnataka.
-                        </p>
-                        <a href="img/tm-img-14.jpg">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-              <!-- .tm-img-gallery-container -->
-            </div>
-          </div>
-        </li>
-
-        <!-- Page 4 About -->
-        <li>
-          <div class="cd-full-width">
-            <div
-              class="container-fluid js-tm-page-content tm-page-width tm-pad-b"
-              data-page-no="4"
-            >
-              <div class="row tm-white-box-margin-b">
-                <div class="col-xs-12">
-                  <div class="tm-flex">
-                    <div
-                      class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding"
-                    >
-                      <h2 class="tm-text-title">About our team</h2>
-                      <p class="tm-text">
-                        Our team is a dedicated group of professionals united by
-                        a passion for excellence and a commitment to delivering
-                        exceptional results. With diverse backgrounds and
-                        expertise, we collaborate seamlessly to tackle
-                        challenges, innovate solutions, and exceed expectations.
-                        Together, we embody a culture of teamwork, integrity,
-                        and relentless pursuit of success.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row tm-white-box-margin-b">
-                <div class="col-xs-12">
-                  <div class="tm-flex">
-                    <div
-                      class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding"
-                    >
-                      <h2 class="tm-text-title">Rakesh Bhai</h2>
-                      <p class="tm-text">
-                        Aliquam porttitor tortor at nisi fermentum, ac porta
-                        arcu vulputate. Nunc lobortis ipsum sapien, non ultrices
-                        odio tempus varius. In posuere dolor non sagittis
-                        ultrices.
-                      </p>
-                    </div>
-                    <div
-                      class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding"
-                    >
-                      <h2 class="tm-text-title">Himanshu Mansara</h2>
-                      <p class="tm-text">
-                        Integer quis leo pretium, cursus nisl non, placerat
-                        magna. Sed efficitur massa id magna eleifend tristique.
-                        Duis vitae turpis dapibus, facilisis magna ut, pretium
-                        metus.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="tm-flex">
-                    <div
-                      class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding"
-                    >
-                      <h2 class="tm-text-title">Utkanth Vasoya</h2>
-                      <p class="tm-text">
-                        Curabitur ac bibendum augue, a convallis mi. Cum sociis
-                        natoque penatibus et magnis dis parturient montes,
-                        nascetur ridiculus mus. Sed ultrices placerat arcu.
-                      </p>
-                    </div>
-                    <div
-                      class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding"
-                    >
-                      <h2 class="tm-text-title">Pramod Vadodariya</h2>
-                      <p class="tm-text">
-                        Proin sagittis mauris dolor, vel efficitur lectus dictum
-                        nec. Sed ultrices placerat arcu, id malesuada metus
-                        cursus suscipit. Donex quis consectetur ligula. Thank
-                        you.
-                      </p>
-                    </div>
-                    <div
-                      class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding"
-                    >
-                      <h2 class="tm-text-title">Dev Bhai</h2>
-                      <p class="tm-text">
-                        Sed ultrices placerat arcu, id malesuada metus cursus
-                        suscipit. Donex quis consectetur ligula. Proin accumsan
-                        eros id nisi porttitor, a facilisis quam cursus.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- .cd-full-width -->
-        </li>
-
-        <!-- Page 5 Contact Us -->
-        <li>
-          <div class="cd-full-width">
-            <div
-              class="container-fluid js-tm-page-content tm-page-pad"
-              data-page-no="5"
-            >
-              <div class="tm-contact-page">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="tm-flex tm-contact-container">
-                      <div
-                        class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact"
-                      >
-                        <h2 class="tm-contact-info">Get In Touch With us!</h2>
-                        <p class="tm-text"></p>
-
-                        <!-- contact form -->
-                        <form
-                          action="index.html"
-                          method="post"
-                          class="tm-contact-form"
-                        >
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              id="contact_name"
-                              name="contact_name"
-                              class="form-control"
-                              placeholder="Name"
-                              required
-                            />
-                          </div>
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              id="company_name"
-                              name="company_name"
-                              class="form-control"
-                              placeholder="Company Name"
-                              required
-                            />
-                          </div>
-
-                          <div class="form-group">
-                            <input
-                              type="email"
-                              id="contact_email"
-                              name="contact_email"
-                              class="form-control"
-                              placeholder="Email"
-                              required
-                            />
-                          </div>
-
-                          <div class="form-group">
-                            <textarea
-                              id="contact_message"
-                              name="contact_message"
-                              class="form-control"
-                              rows="5"
-                              placeholder="Your message"
-                              required
-                            ></textarea>
-                          </div>
-
-                          <button
-                            type="submit"
-                            class="pull-xs-right tm-submit-btn"
-                          >
-                            Send
-                          </button>
-                        </form>
-                      </div>
-
-                      <div
-                        class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact"
-                      >
-                        <h2 class="tm-contact-info">
-                          Location : 419/4, Rd Number 4, GIDC-Sachin, Sachin
-                          INA, Surat
-                        </h2>
-                        <!-- google map goes here -->
-                        <!-- <div id="google-map"></div> -->
-                        <div>
-                          <img
-                            src="img/map.png"
-                            alt="Logo"
-                            id="logo"
-                            style="cursor: pointer"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- .cd-full-width -->
-        </li>
-      </ul>
-      <!-- .cd-hero-slider -->
-
-      <footer class="tm-footer">
-        <div class="tm-social-icons-container text-xs-center">
-          <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
-          <!-- <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a> -->
-          <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
-          <!-- <a href="#" class="tm-social-link"><i class="fa fa-behance"></i></a> -->
-          <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-gray-800"><i class="fa-solid fa-om"></i> Omkar Industries</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="text-gray-800">Home</a>
+          <a href="#about" class="text-gray-800">About</a>
+          <a href="#products" class="text-gray-800">Products</a>
+          <a href="#gallery" class="text-gray-800">Gallery</a>
+          <a href="#team" class="text-gray-800">Team</a>
+          <a href="#contact" class="text-gray-800">Contact</a>
         </div>
-<a class="testweb" href="test.html">test website</a>
-        <!-- <p class="tm-copyright-text">
-          &copy; 2024 All Rights Reserved By OMKAR INDUSTRIES
-        </p> -->
-      </footer>
+        <button class="md:hidden text-gray-800" id="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-white shadow-lg" id="mobile-menu">
+      <a href="#home" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Home</a>
+      <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">About</a>
+      <a href="#products" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Products</a>
+      <a href="#gallery" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Gallery</a>
+      <a href="#team" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Team</a>
+      <a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white">Contact</a>
     </div>
-    <!-- .cd-hero -->
-
-    <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
-    <!-- <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div> -->
-
-    <!-- load JS files -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- jQuery (https://jquery.com/download/) -->
-    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
-    <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
-    <script src="js/hero-slider-main.js"></script>
-    <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
-
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-screen animate__animated animate__fadeIn" style="background-image: url('img/bgcover5.jpg')">
+      <div class="container mx-auto h-full flex justify-center items-center">
+        <div class="text-center text-white">
+          <h1 class="text-5xl font-bold mb-4">Welcome to Omkar Industries</h1>
+          <p class="text-xl mb-8">Leading the industry with quality and innovation</p>
+          <a href="#about" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">About Us</h2>
+        <p class="text-lg mb-4">
+          Omkar Industries, a leader in the manufacturing sector, is dedicated to producing high-quality products that meet the highest industry standards. Our commitment to innovation and excellence drives us to continuously improve our processes and deliver exceptional value to our clients. With a team of skilled professionals and state-of-the-art facilities, we ensure that every product we create exceeds expectations. Join us in our journey to redefine quality and innovation in the manufacturing industry.
+        </p>
+        <a href="#products" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold">Our Products</a>
+      </div>
+    </section>
+    <!-- South Section -->
+    <section id="products" class="py-20 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">South Indian Sarees</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Product Card -->
+          <div class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/uppada.webp" alt="Product 1" class="w-full h-64 object-cover mb-4 rounded-lg" />
+            <h3 class="text-2xl font-bold mb-2">Uppada Saree</h3>
+            <p class="text-lg">Silk/cotton, light feel, intricate designs, from Andhra Pradesh.</p>
+          </div>
+          <div class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/pochampali.webp" alt="Product 2" class="w-full h-64 object-cover mb-4 rounded-lg" />
+            <h3 class="text-2xl font-bold mb-2">Pochampali Saree</h3>
+            <p class="text-lg">Ikat patterns in silk/cotton, vibrant colors, and geometric designs.</p>
+          </div>
+          <div class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/mysore.webp" alt="Product 3" class="w-full h-64 object-cover mb-4 rounded-lg" />
+            <h3 class="text-2xl font-bold mb-2">Mysore Silk Saree</h3>
+            <p class="text-lg">Soft silk, minimalistic designs, and vibrant colors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- North Section -->
+    <section id="gallery" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">North Indian Sarees</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Gallery Image -->
+          <div class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/banarasi.webp" alt="Gallery Image 1" class="w-full h-64 object-cover mb-4 rounded-lg" />
+            <h3 class="text-2xl font-bold mb-2">Banarasi Saree</h3>
+            <p class="text-lg">Rich silk, intricate brocade work, heavy and luxurious.</p>
+          </div>
+          <div class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/chikankari.webp" alt="Gallery Image 2" class="w-full h-64 object-cover mb-4 rounded-lg" />
+            <h3 class="text-2xl font-bold mb-2">Chikankari Saree</h3>
+            <p class="text-lg">Delicate hand embroidery on sheer fabrics like chiffon or georgette.</p>
+          </div>
+          <div class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/phulkari.webp" alt="Gallery Image 3" class="w-full h-64 object-cover mb-4 rounded-lg" />
+            <h3 class="text-2xl font-bold mb-2">Phulkari Saree</h3>
+            <p class="text-lg">Vibrant embroidery with floral motifs, traditional in Punjab.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Team Member -->
+          <div class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/team1.jpg" alt="Team Member 1" class="w-32 h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold mb-2">Rakesh TAlaviya</h3>
+            <p class="text-lg">CEO</p>
+          </div>
+          <div class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/team2.jpg" alt="Team Member 2" class="w-32 h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold mb-2">Himanshu Mansara</h3>
+            <p class="text-lg">CEO</p>
+          </div>
+          <div class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/sharan1.jpg" alt="Team Member 3" class="w-32 h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold mb-2">Utkanth Vasoya</h3>
+            <p class="text-lg">CEO</p>
+          </div>
+          <div class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/team3.jpg" alt="Team Member 3" class="w-32 h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold mb-2">Pramod Vadodariya</h3>
+            <p class="text-lg">CEO</p>
+          </div>
+          <div class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn">
+            <img src="img/team3.jpg" alt="Team Member 3" class="w-32 h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold mb-2">Dev Bhat</h3>
+            <p class="text-lg">CEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+        <form id="contactForm" class="w-full max-w-lg mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name"placeholder="Your Name" class="w-full px-3 py-2 border rounded" required />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" placeholder="Example@gmail.com" class="w-full px-3 py-2 border rounded" required />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+            <textarea id="message" name="message" placeholder="Enter Your Message Here....." class="w-full px-3 py-2 border rounded" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
     <script>
-      function adjustHeightOfPage(pageNo) {
-        var offset = 80;
-        var pageContentHeight = 0;
-
-        var pageType = $('div[data-page-no="' + pageNo + '"]').data(
-          "page-type"
-        );
-
-        if (pageType != undefined && pageType == "gallery") {
-          pageContentHeight = $(
-            ".cd-hero-slider li:nth-of-type(" +
-              pageNo +
-              ") .tm-img-gallery-container"
-          ).height();
-        } else {
-          pageContentHeight =
-            $(
-              ".cd-hero-slider li:nth-of-type(" +
-                pageNo +
-                ") .js-tm-page-content"
-            ).height() + 20;
-        }
-
-        if ($(window).width() >= 992) {
-          offset = 120;
-        } else if ($(window).width() < 480) {
-          offset = 40;
-        }
-
-        // Get the page height
-        var totalPageHeight =
-          $(".cd-slider-nav").height() +
-          pageContentHeight +
-          offset +
-          $(".tm-footer").height();
-
-        // Adjust layout based on page height and window height
-        if (totalPageHeight > $(window).height()) {
-          $(".cd-hero-slider").addClass("small-screen");
-          $(".cd-hero-slider li:nth-of-type(" + pageNo + ")").css(
-            "min-height",
-            totalPageHeight + "px"
-          );
-        } else {
-          $(".cd-hero-slider").removeClass("small-screen");
-          $(".cd-hero-slider li:nth-of-type(" + pageNo + ")").css(
-            "min-height",
-            "100%"
-          );
-        }
-      }
-
-      /*
-                Everything is loaded including images.
-            */
-      $(window).load(function () {
-        adjustHeightOfPage(1); // Adjust page height
-
-        /* Gallery One pop up
-                -----------------------------------------*/
-        $(".gallery-one").magnificPopup({
-          delegate: "a", // child items selector, by clicking on it popup will open
-          type: "image",
-          gallery: { enabled: true },
-        });
-
-        /* Gallery Two pop up
-                -----------------------------------------*/
-        $(".gallery-two").magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: { enabled: true },
-        });
-
-        /* Gallery Three pop up
-                -----------------------------------------*/
-        $(".gallery-three").magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: { enabled: true },
-        });
-
-        /* Collapse menu after click 
-                -----------------------------------------*/
-        $("#tmNavbar a").click(function () {
-          $("#tmNavbar").collapse("hide");
-
-          adjustHeightOfPage($(this).data("no")); // Adjust page height
-        });
-
-        /* Browser resized 
-                -----------------------------------------*/
-        $(window).resize(function () {
-          var currentPageNo = $(
-            ".cd-hero-slider li.selected .js-tm-page-content"
-          ).data("page-no");
-
-          // wait 3 seconds
-          setTimeout(function () {
-            adjustHeightOfPage(currentPageNo);
-          }, 1000);
-        });
-
-        // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
-        $("body").addClass("loaded");
+      // Menu toggle
+      document.getElementById('menu-button').addEventListener('click', function() {
+        this.classList.toggle('open');
+        document.getElementById('mobile-menu').classList.toggle('open');
       });
 
-      /* Google map
-            ------------------------------------------------*/
-      var map = "";
-      var center;
+      // Form validation and submission
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-      //
+        // Perform form validation
+        let valid = true;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
 
-      //  function initMap() {
-      //             var omkarIndustries = {lat: 21.085345, lng: 72.860781};
-      //             var map = new google.maps.Map(document.getElementById('google-map'), {
-      //                 zoom: 15,
-      //                 center: omkarIndustries
-      //             });
-      //             var marker = new google.maps.Marker({
-      //                 position: omkarIndustries,
-      //                 map: map,
-      //                 title: 'OMKAR INDUSTRIES'
-      //             });
-      //         }
-      //         window.initMap = initMap;
+        if (name === '' || email === '' || message === '') {
+          valid = false;
+        }
 
-      //   Google Map
-      document.getElementById("logo").addEventListener("click", function () {
-        // URL of the location in Google Maps
-        const locationURL =
-          "https://www.google.com/maps/place/OMKAR+INDUSTRIES/@21.085345,72.860781,15z/data=!4m6!3m5!1s0x3be051001214e2f7:0xbaa61966c5e6d288!8m2!3d21.085345!4d72.860781!16s%2Fg%2F11w1fl5c9j?entry=ttu";
-        window.open(locationURL, "_blank");
-      });
+        if (valid) {
+          // Display success message
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          });
 
-      function calculateCenter() {
-        center = map.getCenter();
-      }
-
-      function loadGoogleMap() {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src =
-          "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&" +
-          "callback=initialize";
-        document.body.appendChild(script);
-      }
-
-      // DOM is ready
-      $(function () {
-        loadGoogleMap(); // Google Map
+          // Reset form
+          setTimeout(() => {
+            document.getElementById('contactForm').reset();
+          }, 1500);
+        }
       });
     </script>
   </body>

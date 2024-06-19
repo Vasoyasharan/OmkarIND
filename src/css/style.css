@@ -1,0 +1,71 @@
+/* Product and gallery image hover effect */
+      .hover-effect img {
+        transition: transform 0.5s, box-shadow 0.5s;
+      }
+      .hover-effect:hover img {
+        transform: scale(1.1) rotateY(10deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Menu button animation */
+      #menu-button span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #333;
+      }
+      #menu-button.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      #menu-button.open span:nth-child(2) {
+        opacity: 0;
+      }
+      #menu-button.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      #mobile-menu {
+        transition: all 0.5s ease-in-out;
+        transform: scaleY(0);
+        transform-origin: top;
+        display: none;
+      }
+      #mobile-menu.open {
+        transform: scaleY(1);
+        display: block;
+      }
+
+      /* Navbar link hover effect */
+      nav a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+      }
+      nav a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #4c51bf;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+      }
+      nav a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+
+      /* Team member image effect */
+      .team-member img {
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+      .team-member:hover img {
+        transform: scale(1.1);
+      }
