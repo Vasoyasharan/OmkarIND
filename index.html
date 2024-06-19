@@ -171,6 +171,12 @@
     </form>
   </div>
 </section>
-
+<script>
+  // Menu toggle
+      document.getElementById('menu-button').addEventListener('click', function() {
+        this.classList.toggle('open');
+        document.getElementById('mobile-menu').classList.toggle('open');
+      });
+</script>
   </body>
 </html>
