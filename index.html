@@ -181,7 +181,7 @@
             class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
           >
             <img
-              src="src/img/banarasi.webp"
+              src="src/img/banarasi.jpeg"
               alt="Gallery Image 1"
               class="w-full h-64 object-cover mb-4 rounded-lg"
             />
@@ -208,7 +208,7 @@
             class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
           >
             <img
-              src="src/img/phulkari.webp"
+              src="src/img/phulkari.jpeg"
               alt="Gallery Image 3"
               class="w-full h-64 object-cover mb-4 rounded-lg"
             />
@@ -230,23 +230,12 @@
             class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
           >
             <img
-              src="src/img/team1.jpg"
+              src="src/img/hardik.jpg"
               alt="Team Member 1"
               class="w-32 h-32 mx-auto mb-4"
             />
-            <h3 class="text-2xl font-bold mb-2">Rakesh Talaviya</h3>
-            <p class="text-lg">CEO</p>
-          </div>
-          <div
-            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/team2.jpg"
-              alt="Team Member 2"
-              class="w-32 h-32 mx-auto mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-2">Himanshu Mansara</h3>
-            <p class="text-lg">CEO</p>
+            <h3 class="text-2xl font-bold mb-2">Hardik Vanani</h3>
+            <p class="text-lg">CTO</p>
           </div>
           <div
             class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
@@ -256,10 +245,21 @@
               alt="Team Member 3"
               class="w-32 h-32 mx-auto mb-4"
             />
-            <h3 class="text-2xl font-bold mb-2">Utkanth Vasoya</h3>
+            <h3 class="text-2xl font-bold mb-2">Sharan Vasoya</h3>
             <p class="text-lg">CEO</p>
           </div>
           <div
+            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
+          >
+            <img
+              src="src/img/shivraj.jpg"
+              alt="Team Member 2"
+              class="w-32 h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2">Shivraj Neoliya</h3>
+            <p class="text-lg">CFO</p>
+          </div>
+          <!-- <div
             class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
           >
             <img
@@ -280,7 +280,7 @@
             />
             <h3 class="text-2xl font-bold mb-2">Dev Bhat</h3>
             <p class="text-lg">CEO</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -350,14 +350,44 @@
         .getElementById("menu-button")
         .addEventListener("click", function () {
           this.classList.toggle("open");
-          document.getElementById("mobile-menu").classList.toggle("open");
+          const mobileMenu = document.getElementById("mobile-menu");
+          if (mobileMenu.classList.contains("open")) {
+            mobileMenu.classList.remove("open");
+            mobileMenu.classList.add("fade-out");
+            setTimeout(() => {
+              mobileMenu.classList.remove("fade-out");
+              mobileMenu.style.display = "none";
+            }, 500);
+          } else {
+            mobileMenu.classList.add("open");
+            mobileMenu.classList.add("fade-in");
+            mobileMenu.style.display = "block";
+            setTimeout(() => {
+              mobileMenu.classList.remove("fade-in");
+            }, 500);
+          }
         });
+
+      // Close menu when a link is clicked
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.remove("open");
+          mobileMenu.classList.add("fade-out");
+          setTimeout(() => {
+            mobileMenu.classList.remove("fade-out");
+            mobileMenu.style.display = "none";
+          }, 500);
+          document.getElementById("menu-button").classList.remove("open");
+        });
+      });
+
       // Form validation and submission
       document
         .getElementById("contactForm")
         .addEventListener("submit", function (event) {
           event.preventDefault();
-
+          Hardik
           // Perform form validation
           let valid = true;
           const name = document.getElementById("name").value.trim();
@@ -373,7 +403,7 @@
             Swal.fire({
               position: "top-end",
               icon: "success",
-              title: "Your work has been saved",
+              title: "Your Form Has Been Sended",
               showConfirmButton: false,
               timer: 1500,
             });
