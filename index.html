@@ -3,417 +3,526 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omkar Industries</title>
-    <!-- Tailwind CSS -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <!-- Animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- SweetAlert2 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="src/css/style.css" />
-    <!-- Custom Js -->
-    <script src="src/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Omkar Industries</title>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
-      <div class="container mx-auto p-4 flex justify-between items-center">
-        <a href="#" class="text-2xl font-bold text-gray-800"
-          ><i class="fa-solid fa-om"></i> Omkar Industries</a
-        >
-        <div class="hidden md:flex space-x-6">
-          <a href="#home" class="text-gray-800">Home</a>
-          <a href="#about" class="text-gray-800">About</a>
-          <a href="#products" class="text-gray-800">Products</a>
-          <a href="#gallery" class="text-gray-800">Gallery</a>
-          <a href="#team" class="text-gray-800">Team</a>
-          <a href="#contact" class="text-gray-800">Contact</a>
-        </div>
-        <button class="md:hidden text-gray-800" id="menu-button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile Menu -->
-    <div class="md:hidden bg-white shadow-lg" id="mobile-menu">
-      <a
-        href="#home"
-        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
-        >Home</a
-      >
-      <a
-        href="#about"
-        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
-        >About</a
-      >
-      <a
-        href="#products"
-        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
-        >Products</a
-      >
-      <a
-        href="#gallery"
-        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
-        >Gallery</a
-      >
-      <a
-        href="#team"
-        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
-        >Team</a
-      >
-      <a
-        href="#contact"
-        class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"
-        >Contact</a
-      >
-    </div>
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="bg-cover bg-center h-screen animate__animated animate__fadeIn"
-      style="background-image: url('src/img/bgcover5.jpg')"
-    >
-      <div class="container mx-auto h-full flex justify-center items-center">
-        <div class="text-center text-white">
-          <h1 class="text-5xl font-bold mb-4">Welcome to Omkar Industries</h1>
-          <p class="text-xl mb-8">
-            Leading the industry with quality and innovation
-          </p>
-          <a
-            href="#about"
-            class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold"
-            >Learn More</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-100">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">About Us</h2>
-        <p class="text-lg mb-4">
-          Omkar Industries, a leader in the manufacturing sector, is dedicated
-          to producing high-quality products that meet the highest industry
-          standards. Our commitment to innovation and excellence drives us to
-          continuously improve our processes and deliver exceptional value to
-          our clients. With a team of skilled professionals and state-of-the-art
-          facilities, we ensure that every product we create exceeds
-          expectations. Join us in our journey to redefine quality and
-          innovation in the manufacturing industry.
-        </p>
-        <a
-          href="#products"
-          class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white font-semibold"
-          >Our Products</a
-        >
-      </div>
-    </section>
-    <!-- South Section -->
-    <section id="products" class="py-20 bg-white">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">South Indian Sarees</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Product Card -->
-          <div
-            class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/uppada.webp"
-              alt="Product 1"
-              class="w-full h-64 object-cover mb-4 rounded-lg"
-            />
-            <h3 class="text-2xl font-bold mb-2">Uppada Saree</h3>
-            <p class="text-lg">
-              Silk/cotton, light feel, intricate designs, from Andhra Pradesh.
-            </p>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"><i class="fa-solid fa-om"></i> Omkar</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#discover" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place" class="nav__link">Collections</a>
+            </li>
+            <li class="nav__item">
+              <a href="#subscribe" class="nav__link">Subscribe</a>
+            </li>
+          </ul>
+
+          <div class="nav__dark">
+            <span class="change-theme-name">Dark mode</span>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
           </div>
-          <div
-            class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/pochampali.webp"
-              alt="Product 2"
-              class="w-full h-64 object-cover mb-4 rounded-lg"
-            />
-            <h3 class="text-2xl font-bold mb-2">Pochampali Saree</h3>
-            <p class="text-lg">
-              Ikat patterns in silk/cotton, vibrant colors, and geometric
-              designs.
-            </p>
+
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="assets/images/Remicover1.jpg" alt class="home__img" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <!-- <h2 class="home__data-subtitle">DISCOVER NEW PLACES WITH US, ADVENTURE AWAITS</h2> -->
+            <h1 class="home__data-title">
+              Discover Our Exquisite Collection<br /><b>Elegance Awaits</b>
+            </h1>
+            <!-- <h1 class="home__data-subtitle"></h1> -->
+            <!-- <a href="#" class="button">Explore</a> -->
           </div>
-          <div
-            class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/mysore.webp"
-              alt="Product 3"
-              class="w-full h-64 object-cover mb-4 rounded-lg"
-            />
-            <h3 class="text-2xl font-bold mb-2">Mysore Silk Saree</h3>
-            <p class="text-lg">
-              Soft silk, minimalistic designs, and vibrant colors.
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100084131319793"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a
+              href="https://instagram.com/sharan_vasoya_07?igshid=ZDdkNTZiNTM="
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sharan-vasoya-b6a21824a"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+
+          <!-- <div class="home__info">
+                        <div>
+                            <span class="home__info-title">6 best places to visit</span>
+                            <a href="#place" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/j.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div> -->
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              More Information <br />
+              About The Best Sarees
+            </h2>
+            <p class="about__description">
+              You can find the most beautiful and elegant sarees at the best
+              prices with special discounts. Choose your perfect saree, and we
+              will guide you through the selection process. Get your saree now
+              and embrace timeless elegance. Adventure in fashion awaits.
             </p>
+            <a href="#place" class="button">More Sarees</a>
+          </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay">
+              <img
+                src="assets/images/chikankari.webp"
+                alt
+                class="about__img-one"
+              />
+            </div>
+
+            <div class="about__img-overlay">
+              <img src="assets/images/mysore.webp" alt class="about__img-two" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- North Section -->
-    <section id="gallery" class="py-20 bg-gray-100">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">North Indian Sarees</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Gallery Image -->
-          <div
-            class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/banarasi.jpeg"
-              alt="Gallery Image 1"
-              class="w-full h-64 object-cover mb-4 rounded-lg"
-            />
-            <h3 class="text-2xl font-bold mb-2">Banarasi Saree</h3>
-            <p class="text-lg">
-              Rich silk, intricate brocade work, heavy and luxurious.
-            </p>
-          </div>
-          <div
-            class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/chikankari.webp"
-              alt="Gallery Image 2"
-              class="w-full h-64 object-cover mb-4 rounded-lg"
-            />
-            <h3 class="text-2xl font-bold mb-2">Chikankari Saree</h3>
-            <p class="text-lg">
-              Delicate hand embroidery on sheer fabrics like chiffon or
-              georgette.
-            </p>
-          </div>
-          <div
-            class="hover-effect p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/phulkari.jpeg"
-              alt="Gallery Image 3"
-              class="w-full h-64 object-cover mb-4 rounded-lg"
-            />
-            <h3 class="text-2xl font-bold mb-2">Phulkari Saree</h3>
-            <p class="text-lg">
-              Vibrant embroidery with floral motifs, traditional in Punjab.
-            </p>
+      </section>
+
+      <!--==================== DISCOVER ====================-->
+      <section class="discover section" id="discover">
+        <h2 class="section__title">
+          Discover the most <br />
+          attractive Sarees
+        </h2>
+
+        <div class="discover__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== DISCOVER 1 ====================-->
+            <div class="discover__card swiper-slide">
+              <img
+                src="assets/images/banarasi.jpeg"
+                alt
+                class="discover__img"
+              />
+              <div class="discover__data">
+                <h2 class="discover__title">Banarasi</h2>
+                <span class="discover__description">Exquisite Handwoven Silk Sarees</span>
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 2 ====================-->
+            <div class="discover__card swiper-slide">
+              <img
+                src="assets/images/kanchipuram.jpg"
+                alt
+                class="discover__img"
+              />
+              <div class="discover__data">
+                <h2 class="discover__title">kanchipuram</h2>
+                <span class="discover__description">Elegant and Traditional Silk Sarees</span>
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 3 ====================-->
+            <div class="discover__card swiper-slide">
+              <img
+                src="assets/images/chikankari.webp"
+                alt
+                class="discover__img"
+              />
+              <div class="discover__data">
+                <h2 class="discover__title">Chikankari</h2>
+                <span class="discover__description">Delicate Hand-Embroidered Sarees</span>
+              </div>
+            </div>
+
+            <!--==================== DISCOVER 4 ====================-->
+            <div class="discover__card swiper-slide">
+              <img src="assets/images/uppada.webp" alt class="discover__img" />
+              <div class="discover__data">
+                <h2 class="discover__title">Uppada</h2>
+                <span class="discover__description">Luxurious Silk Sarees with Fine Zari Work</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-white">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">Our Team</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Team Member -->
-          <div
-            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/hardik.jpg"
-              alt="Team Member 1"
-              class="w-32 h-32 mx-auto mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-2">Hardik Vanani</h3>
-            <p class="text-lg">CTO</p>
+      </section>
+
+      <!--==================== EXPERIENCE ====================-->
+      <section class="experience section">
+        <h2 class="section__title">
+          With Our Experience <br />
+          We Will Serve You
+        </h2>
+
+        <div class="experience__container container grid">
+          <div class="experience__content grid">
+            <div class="experience__data">
+              <h2 class="experience__number">20+</h2>
+              <span class="experience__description"
+                >Years of <br />Craftsmanship</span
+              >
+            </div>
+
+            <div class="experience__data">
+              <h2 class="experience__number">150+</h2>
+              <span class="experience__description"
+                >Unique <br />
+                Designs</span
+              >
+            </div>
+
+            <div class="experience__data">
+              <h2 class="experience__number">1000+</h2>
+              <span class="experience__description"
+                >Satisfied <br />
+                Customers</span
+              >
+            </div>
           </div>
-          <div
-            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/sharan1.jpg"
-              alt="Team Member 3"
-              class="w-32 h-32 mx-auto mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-2">Sharan Vasoya</h3>
-            <p class="text-lg">CEO</p>
-          </div>
-          <div
-            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/shivraj.jpg"
-              alt="Team Member 2"
-              class="w-32 h-32 mx-auto mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-2">Shivraj Neoliya</h3>
-            <p class="text-lg">CFO</p>
-          </div>
-          <!-- <div
-            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/team3.jpg"
-              alt="Team Member 3"
-              class="w-32 h-32 mx-auto mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-2">Pramod Vadodariya</h3>
-            <p class="text-lg">CEO</p>
-          </div>
-          <div
-            class="team-member p-6 rounded-lg shadow-lg animate__animated animate__zoomIn"
-          >
-            <img
-              src="src/img/team3.jpg"
-              alt="Team Member 3"
-              class="w-32 h-32 mx-auto mb-4"
-            />
-            <h3 class="text-2xl font-bold mb-2">Dev Bhat</h3>
-            <p class="text-lg">CEO</p>
+          <!-- 
+          <div class="experience__img grid">
+            <div class="experience__overlay">
+              <img
+                src="assets/images/saree2.jpg"
+                alt=""
+                class="experience__img-one"
+              />
+            </div>
+
+            <div class="experience__overlay">
+              <img
+                src="assets/images/saree3.jpg"
+                alt=""
+                class="experience__img-two"
+              />
+            </div>
           </div> -->
         </div>
+      </section>
+
+      <!--==================== VIDEO ====================-->
+      <!-- <section class="video section">
+        <h2 class="section__title">Video Tour</h2>
+
+        <div class="video__container container">
+          <p class="video__description">
+            Find out more with our video of the most beautiful and pleasant
+            places for you and your family.
+          </p>
+
+          <div class="video__content">
+            <video id="video-file">
+              <source src="assets/video/video.mp4" type="video/mp4" />
+            </video>
+
+            <button class="button button--flex video__button" id="video-button">
+              <i class="ri-play-line video__button-icon" id="video-icon"></i>
+            </button>
+          </div>
+        </div>
+      </section> -->
+
+      <!--==================== Product ====================-->
+      <section class="place section" id="place">
+        <h2 class="section__title">Explore Our Collection</h2>
+
+        <div class="place__container container grid">
+          <!--==================== Product CARD 1 ====================-->
+          <div class="place__card">
+            <img src="assets/images/banarasi.jpeg" alt class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4.8</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Banarasi Silk Saree</h3>
+                <span class="place__subtitle">Varanasi, India</span>
+                <span class="place__price">$119</span>
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 2 ====================-->
+          <div class="place__card">
+            <img src="assets/images/Chanderi.jpg" alt class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4.0</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Chanderi Silk Saree</h3>
+                <span class="place__subtitle">Madhya Pradesh, India</span>
+                <span class="place__price">$215</span>
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 3 ====================-->
+          <div class="place__card">
+            <img src="assets/images/kanjiwaram.jpg" alt class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4.9</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Kanjeevaram Silk Saree</h3>
+                <span class="place__subtitle">Tamil Nadu, India</span>
+                <span class="place__price">$150</span>
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 4 ====================-->
+          <div class="place__card">
+            <img src="assets/images/tant.jpeg" alt class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4.8</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Tant Cotton Saree</h3>
+                <span class="place__subtitle">West Bengal, India</span>
+                <span class="place__price">$99</span>
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!--==================== PLACES CARD 5 ====================-->
+          <div class="place__card">
+            <img src="assets/images/bandhani.webp" alt class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,8</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Bandhani Saree</h3>
+                <span class="place__subtitle">Gujarat, India</span>
+                <span class="place__price">$129</span>
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+          <!--==================== PLACES CARD 6 ====================-->
+          <div class="place__card">
+            <img src="assets/images/Patola.webp" alt class="place__img" />
+
+            <div class="place__content">
+              <span class="place__rating">
+                <i class="ri-star-line place__rating-icon"></i>
+                <span class="place__rating-number">4,9</span>
+              </span>
+
+              <div class="place__data">
+                <h3 class="place__title">Patola Silk Saree</h3>
+                <span class="place__subtitle">Gujarat, India</span>
+                <span class="place__price">$349</span>
+              </div>
+            </div>
+
+            <button class="button button--flex place__button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section" id="subscribe">
+        <div class="subscribe__bg">
+          <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">Subscribe Now</h2>
+            <p class="subscribe__description">
+              Subscribe now and get a special 33% discount.
+            </p>
+
+            <form action class="subscribe__form">
+              <input
+                type="text"
+                placeholder="Enter email"
+                class="subscribe__input"
+              />
+
+              <button class="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="book" id="book">
+
+                <h1 class="heading">
+                    <span>b</span>
+                    <span>o</span>
+                    <span>o</span>
+                    <span>k</span>
+                    <span class="space"></span>
+                    <span>n</span>
+                    <span>o</span>
+                    <span>w</span>
+                </h1>
+            
+                <div class="row">
+            
+                    <div class="image">
+                        <img src="images/book-img.png" alt="">
+                    </div>
+            
+                    <form action="">
+                        <div class="inputBox">
+                            <h3>where to</h3>
+                            <input type="text" placeholder="place name">
+                        </div>
+                        <div class="inputBox">
+                            <h3>how many</h3>
+                            <input type="number" placeholder="number of guests">
+                        </div>
+                        <div class="inputBox">
+                            <h3>arrivals</h3>
+                            <input type="date">
+                        </div>
+                        <div class="inputBox">
+                            <h3>leaving</h3>
+                            <input type="date">
+                        </div>
+                        <input type="submit" class="btn" value="book now">
+                    </form>
+            
+                </div>
+            
+            </section>
+ -->
+
+      <!--==================== SPONSORS ====================-->
+      <section class="sponsor section">
+        <div class="sponsor__container container grid">
+          <div class="sponsor__content">
+            <img src="assets/images/sponsors1.png" alt class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/images/sponsors2.png" alt class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/images/sponsors3.png" alt class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/images/sponsors4.png" alt class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/images/sponsors5.png" alt class="sponsor__img" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__rights">
+          <p><b>Created by Sharan Vasoya</b></p>
+        </div>
       </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-100">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
-        <form id="contactForm" class="w-full max-w-lg mx-auto">
-          <div class="mb-4 text-left">
-            <!-- Add text-left class here to align labels left -->
-            <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
-              >Name</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              class="w-full px-3 py-2 border rounded"
-              required
-            />
-          </div>
-          <div class="mb-4 text-left">
-            <!-- Add text-left class here to align labels left -->
-            <label
-              for="email"
-              class="block text-gray-700 text-sm font-bold mb-2"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Example@gmail.com"
-              class="w-full px-3 py-2 border rounded"
-              required
-            />
-          </div>
-          <div class="mb-4 text-left">
-            <!-- Add text-left class here to align labels left -->
-            <label
-              for="message"
-              class="block text-gray-700 text-sm font-bold mb-2"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Enter Your Message Here....."
-              class="w-full px-3 py-2 border rounded"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </section>
-    <script>
-      // Menu toggle
-      document
-        .getElementById("menu-button")
-        .addEventListener("click", function () {
-          this.classList.toggle("open");
-          const mobileMenu = document.getElementById("mobile-menu");
-          if (mobileMenu.classList.contains("open")) {
-            mobileMenu.classList.remove("open");
-            mobileMenu.classList.add("fade-out");
-            setTimeout(() => {
-              mobileMenu.classList.remove("fade-out");
-              mobileMenu.style.display = "none";
-            }, 500);
-          } else {
-            mobileMenu.classList.add("open");
-            mobileMenu.classList.add("fade-in");
-            mobileMenu.style.display = "block";
-            setTimeout(() => {
-              mobileMenu.classList.remove("fade-in");
-            }, 500);
-          }
-        });
+    </footer>
 
-      // Close menu when a link is clicked
-      document.querySelectorAll("#mobile-menu a").forEach((link) => {
-        link.addEventListener("click", function () {
-          const mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.classList.remove("open");
-          mobileMenu.classList.add("fade-out");
-          setTimeout(() => {
-            mobileMenu.classList.remove("fade-out");
-            mobileMenu.style.display = "none";
-          }, 500);
-          document.getElementById("menu-button").classList.remove("open");
-        });
-      });
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
 
-      // Form validation and submission
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-       
-          // Perform form validation
-          let valid = true;
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const message = document.getElementById("message").value.trim();
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-          if (name === "" || email === "" || message === "") {
-            valid = false;
-          }
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-          if (valid) {
-            // Display success message
-            Swal.fire({
-              position: "top-end",
-              icon: "success",
-              title: "Your Form Has Been Sended",
-              showConfirmButton: false,
-              timer: 1500,
-            });
-
-            // Reset form
-            setTimeout(() => {
-              document.getElementById("contactForm").reset();
-            }, 1500);
-          }
-        });
-    </script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
